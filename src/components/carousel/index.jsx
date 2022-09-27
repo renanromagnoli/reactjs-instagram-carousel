@@ -1,6 +1,17 @@
+import { useEffect, useRef, useState } from 'react'
+import { instagramFeed } from '../instagram'
 import styles from './styles.module.scss'
 
 export function Carousel() {
+
+    const [data, setData] = useState([])
+    const container = useRef(null)
+
+    useEffect(() => {
+        const dataInstagram = instagramFeed()
+        setData(dataInstagram)
+    }, [])
+
     return (
         <div className={styles.container}>
             <div className={styles.logo}>

@@ -8,22 +8,22 @@ import { instagramFeed } from "./components/instagram";
 
 function App() {
 
-  const [instaFeed, setInstaFeed] = useState()
+//   const [instaFeed, setInstaFeed] = useState()
 
-  // function getInstaFeed() {
-  //   return instagramFeed()
-  // }
-  instagramFeed()
+//   // function getInstaFeed() {
+//   //   return instagramFeed()
+//   // }
+//   instagramFeed()
 
-  useEffect(() => {
-    const feed = instagramFeed()
-    setInstaFeed(feed)
-    // console.log(instaFeed)
-  }, [])
+//   useEffect(() => {
+//     const feed = instagramFeed()
+//     setInstaFeed(feed)
+//     // console.log(instaFeed)
+//   }, [])
 
   
 
-  return Carousel(instaFeed);
+//   return Carousel(instaFeed);
+  return Carousel()
 }
-
 export default App;
